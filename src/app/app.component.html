@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angular</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="alert alert-danger">Bem-vindo ao Angular {{nome}}</h1>
+    <p class="btn btn-primary">{{vetor[1] + " vetor:: "+ vetor[2]}}</p>
+  </div>
+
+  <table>
+    <tr *ngFor="let i of vetor, let o=index">
+      <td>
+        {{o}}
+      </td>
+      <td>
+        {{i}}
+      </td>
+    </tr>
+  </table>
+  <br>
+  <p>Nome: {{data.nome}}</p>
+  <p>Curso: {{data.curso}}</p>
+  <p>Cidade: {{data.cidade}}</p>
+</body>
+</html>
